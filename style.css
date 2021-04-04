@@ -1,0 +1,700 @@
+  
+  @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Henny+Penny&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url('car3.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.search-container{
+    background: #fff;
+    height: 30px;
+    border-radius: 30px;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .8s;
+    box-shadow: 4px 4px 6px 0 rgba(225,225,225,.3)
+    -4px -4px 6px 0 rgba(116,125,136,.2)
+    inset -4px -4px 6px 0 rgba(255,255,255,.2)
+    inset 4px 4px 6px 0 rgba(0,0,0,.2);
+}
+.search-container:hover>.search-input{
+    width: 400px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.search-container.search-input{
+    background: transparent;
+    border-radius: 30px;
+    outline: none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+ 
+    transition: 0.8s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.search-btn{
+    color:#069370 ;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.search-container.search-btn.fas{
+    color: #025492;
+
+}
+@keyframes hoverShake
+{
+    0%{transform: skew(0deg,0deg);}
+    25%{transform: skew(5deg,5deg);}
+    75%{transform: skew(-5deg,-5deg);}
+    100%{transform: skew(0deg,0deg);}
+}
+.search-container:hover{
+    animation:hoverShake 0.15s linear 3;
+}
+
+/*headeer qism*/
+
+
+header{
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+   background: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    
+}
+.logo1{
+    color:#025492;
+    height: 60px;
+    font-size: 36px;
+    line-height: 60px;
+    padding: 0 20px;
+   font-family: 'Henny Penny';
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 700;
+    text-decoration: none!important;
+   }
+nav{
+    float:right ;
+}
+.clearfix{
+    clear: both;
+}
+
+
+nav ul{
+    margin:0 ;
+    padding: 0;
+    display : flex;
+
+}
+nav ul li{
+    list-style: none!important;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+nav ul li a{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none!important;
+    color: #262626;
+    font-family: 'Architects Daughter';
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+} 
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: #025492;
+    color: #fff;
+    
+    transition: 0.5s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+
+
+/*footer qism*/
+
+
+footer{
+    position: relative;
+    background: #f1f1f1;
+    padding: 90px 0;
+    margin: 20px auto;
+    border-radius: 20px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    background-size: cover;
+    
+}
+.footer-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+
+}
+.logo{
+    width: 220px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.social-media{
+    margin: 20px 0;
+}
+.social-media a{
+    color: #001a21;
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.social-media a:hover{
+    color:#025492;
+}
+.right-col h1{
+    font-size: 26px;
+     font-family: 'syne mono';
+}
+.border{
+    width: 100px;
+    height: 4px;
+    background: #025492;
+}
+.right-col p{
+    font-family: 'syne mono';
+}
+.left-col p{
+    font-family: 'syne mono';
+}
+
+.newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.txtb{
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color:#293043 ;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+}
+.btn{
+   
+    padding: 18px 40px;
+    font-size: 16px;
+    color:#293043 ;
+    background:#025492;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+   margin-left: 20px;
+   cursor: pointer;
+   transition: opacity .3s linear;
+}
+.btn:hover{
+    opacity: .7;
+}
+
+
+
+
+/*about page*/
+
+.about-section{
+    background:url('car5.jpg') no-repeat left;
+    background-size: 55%;
+    background-color: white;
+    overflow: hidden;
+    padding: 100px 0;
+    
+   
+    
+}
+.about-container{
+    width: 50%;
+    float: right;
+    background-color:#00335fe0;
+    padding: 150px;
+    border-radius: 10px;
+
+}
+.about-container h1{
+    font-family: 'syne mono';
+}
+.about-container p{
+    font-family: 'syne mono';
+}
+.about-container span{
+    font-family: 'syne mono';
+}
+ .about-text{
+     font-size: 13px;
+     color: #fff;
+     line-height: 30px;
+     text-align: justify;
+     margin-bottom: 40px;
+ }
+ .skills{
+     justify-content: space-between;
+     display: flex;
+     font-weight: 700;
+     font-size: 13px;
+ }
+
+
+
+/*homepage*/
+.homepage{
+    position: relative;
+    display: block;
+    background-image: url('car1.jpg');
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    background-size: cover;
+    padding-top: 3rem;
+}
+.homepage h1{
+    text-align: center;
+    color: white;
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+    margin-bottom:3rem ;
+    font-family: 'syne mono';
+}
+.homepage h2{
+    text-align: center;
+    color: white;
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+
+  font-family: 'syne mono';
+}
+.homepage p{
+    text-align: center;
+    margin-top: 3rem;
+    color: #000000;
+    font-family: 'syne mono';
+}
+.homepage button{
+ width: 132px;
+    height: 3.5rem;
+    border: none;
+    font-size: 16px;
+   
+    background:#025492;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+  margin: 3rem 0 3rem 0;
+   cursor: pointer;
+   transition: opacity .3s linear;
+}
+.homepage button > a{
+    
+    color: #000000;
+    
+    
+    font-size: 1rem;
+    
+    text-decoration: none!important;
+    font-family: sans-serif;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+/*contact page*/
+
+
+.contact{
+    position:relative;
+    background-color:#fff; 
+    max-width: 1200px!important;
+    border-radius: 10px;
+    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.content{
+    max-width: 800px;
+    text-align: center;
+}
+.content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #00325f;
+    
+    font-family: 'syne mono';
+}
+.content p{
+    font-weight: 300;
+    color: #00325f;
+    font-family: 'syne mono';
+}
+.contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+ .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+ .contact-box{
+position: relative;
+padding: 20px 0;
+display: flex;
+}
+.icon{
+    min-width: 60px;
+    height: 60px;
+    background: #025492;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #00325f;
+    flex-direction: column;
+    font-weight: 200;
+}
+.text h3{
+    font-weight: 500;
+    color:#00325f;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+
+}
+.inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.inputBox input,textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+
+}
+.inputBox input:focus~span,
+.inputBox input:valid~span,
+.inputBox textarea~span,
+.inputBox textarea:valid~span{
+    color: #00325f;
+    font-size: 12px;
+    transform: translateY(-20px);
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.inputBox input[type="submit"]{
+    width: 100px;
+    background: #025492;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+
+}
+
+/*team page*/
+
+.qsh{
+    width: 100px;
+    border-radius: 20px;
+}
+.user{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 10px;
+}
+h3.team-name{
+    margin: 0 0 20px 20px;
+    font-family: 'syne mono';
+
+}
+.team-mal{
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    background: #025492;
+    font-family: 'syne mono';
+}
+.team-card{
+    max-width: 1240px;
+    position: relative;
+    display: flex;
+    margin: auto;
+    box-sizing: border-box;
+    background-size: cover;
+   
+}
+.team-container{
+    background: #fff;
+    position: relative;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+
+/*respon . header*/
+
+
+@media screen and (max-width:1200px){
+    header{
+        margin: 20px;
+    }
+}
+
+
+ @media screen and (max-width:1200px){
+    .about-container{
+        padding:80px;
+
+    }
+}
+ 
+ 
+
+
+@media screen and (max-width: 991px){
+    .logo1{
+        font-size: 48px;
+    }
+    
+    
+    .menu-toggle{
+       display: block;
+       width: 40px;
+       height: 40px;
+       margin: 10px;
+       
+       float: right;
+       cursor: pointer;
+       text-align: center;
+       font-size: 30px;
+       color:#025492;
+    }
+    .menu-toggle:before{
+
+        content:'\f0c9' ;
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+    .menu-toggle.active:before{
+
+        content:'\f00d' ;
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+    nav {
+        display: none;
+    }
+    nav.active{
+        display:block;
+        width: 100%;
+    }
+    nav.active ul{
+        display: block;
+    }
+    nav.active ul li a{
+      margin: 0 ;
+      font-size: 34px;
+      letter-spacing: 10px;
+
+    }
+}
+@media screen and (max-width:991px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px!;
+
+    }   
+
+.about-container{
+   width: 83%;
+   
+   float: right;
+   overflow: hidden;
+}
+}
+
+
+@media screen and (max-width:991px){
+    .homepage h2,.homepage h1{
+        font-size: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 991px)
+{
+.contact{
+    padding: 50px;
+}
+.contact-container{
+    flex-direction: column;
+}
+.contactInfo{
+    margin-bottom: 4;
+}
+.contactInfo,.contactForm{
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 991px){
+    .team-card{
+        display: block;
+    }
+    .team-container{
+    
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 991px){
+   
+   .footer-container{
+       max-width: 600px;
+   } 
+   .right-col{
+       width: 100%;
+       margin-bottom: 60px;
+   }
+   .left-col{
+       width: 100%;
+       text-align: center;
+   }
+}
+
+
+
+/*respon. footer*/
+@media screen and (max-width:760px) {
+    .btn{
+        margin:0;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+ 
+    }
+    .about-container{
+        padding: 60px;
+    }
+ }
+
+ 
+
+
+
+
+
+
